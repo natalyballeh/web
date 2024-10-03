@@ -1,0 +1,909 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 3000px;
+    font-family: Arial, sans-serif;
+}
+.nav {
+    width: 100%;
+    height: 65px;
+    background-color:rgb(155, 63, 94) ;
+    position: fixed;
+    z-index: 1000;
+    padding: 15px;
+    opacity: o.5;
+    margin-bottom:50px;
+}
+.logo{
+    width: 60px;
+    height:100%;
+    float: left;
+    margin-left: 100px;
+   
+}
+.nav ul{
+     float: right;
+    margin-right:130px;
+    padding-top:5px;
+}
+.nav ul li{
+    display: inline;
+    margin-left: 20px;
+    color: rgb(41, 0, 12);
+    font-weight: bold;
+   cursor: pointer;
+    position: relative;
+}
+.nav ul li a{
+    color: rgb(41, 0, 12);
+    text-decoration: none;
+    font-size:25px;
+   
+    font-weight:600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.nav ul a:hover{
+    color:rgb(221, 121, 143) ;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a::after{
+    content: "";
+    position: absolute;
+   top:23;
+    left: 0;
+    width:0;
+    height: 0;
+    transition: 1.0s;
+    background-color: rgb(9, 2, 2);
+
+}
+a:hover::after{
+    
+    width: 100%;
+    height:4px;
+}
+
+.hero{
+    width: 100%;
+    background-image: url(../website_1/images/3d-rendering-personal-care-products-fondant-pink_23-2151053845.avif);
+    margin-top:65px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    position: relative;
+    margin: auto;
+    margin-bottom: 50px;
+    opacity: 0.8;
+}
+.text-hero{
+    width: 40%;
+    padding: 16px;
+    border-radius: 12px;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    position: absolute;
+    top:20%;
+    left: 10%; 
+    transform: translate(-20%,-20%); 
+    margin: auto;
+}
+.titel-hero{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(41, 0, 12);
+}
+.p-hero{
+   margin: 12px 4px;
+   font-family:'Times New Roman', Times, serif;
+  font-size: 30px;
+   color:rgb(99, 25, 49);
+   font-weight:550;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    display: inline;
+    margin: 12px 15px;
+    background-color:rgb(116, 33, 61);
+    color:rgb(218, 218, 218);
+    font-size:20px;
+    border: none;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+} 
+.btn:hover{
+    background-color:rgb(212, 94, 133);
+    color:black;
+}
+.About{
+    width: 100%;
+    height:550px;
+    background-color:white;
+   margin-top: 0px;
+}
+h2{
+    margin-top: 40px;
+     font-size:30px ;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color:rgb(0, 0, 0);
+    letter-spacing:6px;
+}
+.website{
+    font-size:30px ;
+    color:rgb(208, 19, 98) ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+.line{
+    width: 400px;
+    height: 8px;
+    background-color:black ;
+    border: 3px solid  rgb(0, 0, 0);
+    margin: 12px auto;
+    margin-bottom:60px;
+
+}
+.container{
+    width: 80%;
+    margin: auto;
+    height:14%;
+}
+
+.box1-About{
+    background-color: white;
+    float:left;
+    position: relative;
+    border: 4px solid black;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 120;
+    
+}
+.info-About{
+    margin-top: 15px;
+}
+i{
+    color:rgb(237, 122, 174) ;
+    margin-top: 30px;
+    font-size: 20px;
+}
+p{
+  margin: 60 30;
+color: rgb(152, 17, 80);
+}
+.btn-About{
+    display: inline;
+    margin: 12px 35px;
+    background-color:rgb(116, 33, 61);
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.box1-About:hover  .info-About{ 
+color: rgb(208, 19, 98);
+font-size: larger;
+}
+.box1-About:hover p{
+    color: black;
+    font-weight: 700;
+}
+.box1-About:hover i{
+    font-size: 30px;
+}
+.box2-About:hover i{
+    font-size: 30px;
+   
+}
+.box1-About::after{
+    content: "";
+    position: absolute;
+   top: 0;
+    left: 0;
+    width:0;
+    height: 0;
+    transition: 1.5s;
+    background-color:rgba(205, 81, 133, 0.489) ;
+}
+.box1-About:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.box2-About{
+    margin-left:50px;
+    float:left;
+    position: relative;
+    border: 4px solid black;
+    width: 30%;
+    text-align: center;
+  margin-bottom: 50;
+    position: relative;
+    background-color: white;
+}
+
+.box2-About:hover  .info-About{ 
+    color:rgb(216, 109, 154);
+    font-size: larger;
+}
+.box2-About:hover p{
+        color: black;
+        font-weight: 700;
+}
+.box2-About::after{
+        content: "";
+        position: absolute;
+       top: 0;
+        left: 0;
+        width:0;
+        height: 0;
+        transition: 1.5s;
+        background-color:rgba(205, 81, 133, 0.489) ;
+    
+}
+.box2-About:hover::after{
+        width: 100%;
+        height: 100%;
+}
+
+.parent-galary{
+    position: relative;
+    
+}
+.text-galary{
+    font-size:15px;
+    margin:50px  30px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    text-align: center; 
+    letter-spacing:7px;
+} 
+.store{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(208, 19, 98) ;
+    font-weight: 700;
+}
+.container1{
+    width: 80%;
+   margin: auto;
+    
+}
+.box1-galary{
+    float: left;
+    position: relative;
+   
+    width: 30%;
+    height:150px;
+
+}
+.img-galary{
+    position: relative;
+    width:100%;
+    margin: auto;
+}
+.img-galary img{
+width: 100%;
+height:150px;
+}
+.overlay-galary{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color:rgba(185, 55, 105, 0.593);
+    opacity: 0;
+    transition: 1.2s;
+}
+.overlay-galary h3{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    margin-top: 10px;
+}
+.overlay-galary i{
+    font-size: 40px;
+    margin-left:  100px;
+
+}
+.img-galary:hover .overlay-galary{
+    opacity: 1;
+}
+.box2-galary{
+    float: left;
+    position: relative;
+ 
+    width: 30%;
+    height:150px;
+    margin-left: 5%;
+
+}
+.box3-galary{
+    float: left;
+    position: relative;
+    
+    width: 30%;
+    height:150px;
+    margin-left: 5%;
+}
+.box4-galary{
+    margin-top: 30px;
+    float: left;
+    position: relative;
+    margin-bottom:100px;
+    width: 30%;
+    height:150px;
+   
+}
+.box5-galary{
+    margin-top: 30px;
+    float: left;
+    position: relative;
+    margin-bottom: 100px;
+    width: 30%;
+    height:150px;
+    margin-left: 5%;
+}
+.box6-galary{
+    margin-top: 30px;
+    float: left;
+    position: relative;
+    margin-bottom:100px;
+    width: 30%;
+    height:150px;
+    margin-left: 5%;
+}
+.Buying{
+    margin-top:500px;
+    width: 100%;
+    height:550px;
+    background-color:rgba(201, 73, 111, 0.389);
+}
+.text-Buying{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight: 700;
+     text-align: center; 
+     letter-spacing:7px;
+} 
+ .perfume{
+    font-size: 30px;
+    font-weight: 700;
+    color:rgb(208, 19, 98)  ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ .container-bauing{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+ .box1-buy{
+    width:40%;
+    height:370px;
+    border: 5px solid black;
+    float: left;
+   position: relative;
+   background-color: white;
+}
+.box2-buy{
+    width:40%;
+    height:370px;
+    border: 5px solid black;
+    float: left;
+    margin-left:200px;
+    position: relative;
+   background-color: white;
+}
+h4{
+    margin-top: 10px;
+    font-size:40px;
+    font-weight: bolder;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    margin-bottom: 40px;
+}
+.p-buy{
+    color:rgb(208, 19, 98) ;
+}
+.icon{
+    font-size: 30px;
+ margin-top:10px;
+ margin-left: 80px;
+ margin-bottom: 20px;
+}
+span{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 15px;
+}
+.box1-buy:hover h4{
+    color: rgb(194, 11, 87);
+}
+.box2-buy:hover h4{
+    color: rgb(194, 11, 87);
+}
+
+.box1-buy::after{
+    content: "";
+    position: absolute;
+   top: 0;
+    right: 0;
+    width:0;
+    height: 0;
+    transition:0.9s;
+    background-color:rgba(150, 16, 67, 0.742);
+}
+.box1-buy:hover::after{
+    width: 100%;
+    height: 50%;
+    opacity: 0.6;
+}
+.box1-buy::before{
+    content: "";
+    position: absolute;
+   bottom: 0;
+    left: 0;
+    width:0;
+    height: 0;
+    transition:0.9s;
+    background-color:rgba(150, 16, 67, 0.742) ;
+}
+.box1-buy:hover::before{
+    width:100%;
+    height: 50%;
+    opacity: 0.6;
+}
+.box2-buy::after{
+    content: "";
+    position: absolute;
+   top: 0;
+    left: 0;
+    width:0;
+    height: 0;
+    transition:0.9s;
+    background-color:rgba(150, 16, 67, 0.742);
+}
+.box2-buy:hover::after{
+    width:100%;
+    height: 50%;
+    opacity: 0.6;
+}
+.box2-buy::before{
+    content: "";
+    position: absolute;
+   bottom: 0;
+    right: 0;
+    width:0;
+    height: 0;
+    transition:0.9s;
+    background-color:rgba(150, 16, 67, 0.742);
+}
+.box2-buy:hover::before{
+    width: 100%;
+    height: 50%;
+    opacity: 0.6;
+}
+.box1-buy:hover .p-buy{
+    color: black;
+}
+.box2-buy:hover .p-buy{
+    color: black;
+}
+.Pricing{
+    margin-top:100px;
+}
+.text-Pricing{
+    text-align: center;
+   font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight: 700;
+    letter-spacing:7px;
+}
+.perfume{
+    font-size: 30px;
+    font-weight: 700;
+    color:rgb(208, 19, 98)  ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container-Pricing{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.box1-pricing{
+    float:left;
+    position: relative;
+    border: 5px solid black;
+    width: 30%;
+    text-align: center;
+    margin-bottom:100;
+    height: 450px;
+}
+.box2-pricing{
+    float:left;
+    position: relative;
+    border: 5px solid black;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 100;
+    height: 450px;
+    margin-left: 50px;
+}
+.box3-pricing{
+    float:left;
+    position: relative;
+    border: 5px solid black;
+    width: 30%;
+    text-align: center;
+    margin-bottom:100;
+    height: 450px;
+    margin-left: 50px;
+}
+.circale{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border:3px solid rgb(160, 12, 76);
+    border-radius:100px;
+    transition: 0.9;
+}
+.box1-pricing:hover .circale{
+    background-color: black;
+}
+.box2-pricing:hover .circale{
+    background-color: black;
+}
+.box3-pricing:hover .circale{
+    background-color: black;
+}
+h5{
+    font-size:30px;
+    margin-top: 19px;
+}
+.box1-pricing:hover h5{
+color: rgb(224, 146, 180);
+}
+.box2-pricing:hover h5{
+    color: rgb(224, 146, 180);
+}
+.box3-pricing:hover h5{
+        color: rgb(224, 146, 180);
+}  
+h6{
+    color:rgb(112, 12, 51) ;
+    font-size:30px;
+    margin-bottom: 5px;
+    margin-top:10px;
+}
+.button-pricing{
+    width:90px;
+    height: 30px;
+     margin: auto;
+    background-color: rgb(204, 91, 129);
+    color:rgb(0, 0, 0) ;
+}
+.box1-pricing::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 0;
+    transition:0.8s;
+    background-color:rgba(150, 16, 67, 0.742) ;
+}
+.box1-pricing:hover::after{
+    width: 50%;
+    height: 100%;
+    opacity: 0.6;
+}
+.box1-pricing::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:0;
+    height: 0;
+    transition:0.8s;
+    background-color:rgba(150, 16, 67, 0.742)  ;
+}
+.box1-pricing:hover::before{
+    width: 50%;
+    height: 100%;
+    opacity: 0.6;
+}
+.box1-pricing:hover h4{
+    color:rgba(117, 20, 57, 0.742)  ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.box2-pricing:hover h4{
+    color:rgba(117, 20, 57, 0.742)  ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.box3-pricing:hover h4{
+    color:rgba(117, 20, 57, 0.742)  ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.box2-pricing::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 0;
+    transition:0.8s;
+    background-color:rgba(150, 16, 67, 0.742) ;
+}
+.box2-pricing:hover::after{
+    width: 50%;
+    height: 100%;
+    opacity: 0.6;
+}
+.box2-pricing::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:0;
+    height: 0;
+    transition:0.8s;
+    background-color:rgba(150, 16, 67, 0.742)  ;
+}
+.box2-pricing:hover::before{
+    width: 50%;
+    height: 100%;
+    opacity: 0.6;
+}
+.box3-pricing::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 0;
+    transition:0.8s;
+    background-color:rgba(150, 16, 67, 0.742) ;
+}
+.box3-pricing:hover::after{
+    width: 50%;
+    height: 100%;
+    opacity: 0.6;
+}
+.box3-pricing::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:0;
+    height: 0;
+    transition: 0.8s;
+    background-color:rgba(150, 16, 67, 0.742) ;
+}
+.box3-pricing:hover::before{
+    width: 50%;
+    height: 100%;
+    opacity: 0.6;
+}
+.button-pricing:hover{
+    background-color: black;
+    color: white;
+}
+.new{
+    margin-top:100px;
+    background-color:rgba(201, 73, 111, 0.389);
+    width: 100%;
+    height:550px;
+  
+}
+.text-new{
+    text-align: center;
+   font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight: 700;
+     letter-spacing:7px;
+     margin-top: 600px;
+}
+.container-new{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.box1-new{
+    float:left;
+    position: relative;
+    border: 5px solid black;
+    width: 30%;
+    text-align: center;
+    margin-bottom:70px;
+    height:400px;
+    background-color: white;
+    
+}
+.box2-new{
+    float:left;
+    position: relative;
+    border: 5px solid black;
+    width: 30%;
+    text-align: center;
+    margin-bottom:70px;
+    height:400px;
+    margin-left: 5%;
+    background-color: white;
+}
+.box3-new{
+    float:left;
+    position: relative;
+    border: 5px solid black;
+    width: 30%;
+    text-align: center;
+    margin-bottom:70;
+    height:400px;
+    margin-left: 5%;
+    background-color: white;
+}
+.img-new{
+    margin-top:20px;
+   width:300px;
+    height:200px;
+}
+.title-new{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(209, 63, 99) ;
+    margin-top:10px ;
+}
+.name-perfume{
+    text-align: center;
+    font-size:25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(165, 65, 90) ;
+    margin-top:10px ;
+    margin-bottom: 20px;
+}
+.label-new{
+   border-radius: 17px;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    border:2px solid rgba(209, 63, 99,0,855) ;
+    background-color:rgba(209, 63, 99, 0.855);
+}
+.label-text{
+  padding-top: 10px;
+    color: white;
+    font-size:20px;
+    font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.overlay-new{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:  0;
+    opacity: 0;
+    transition:1.4s;
+    background-color:rgba(133, 32, 57, 0.808) ;
+   
+}
+.overlay-new i{
+    display: block;
+    font-size: 40px;
+   margin-left:300px;
+    line-height:30px;
+    left: 0;
+}
+.overlay-title{
+  font-size:50PX;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 20px;
+    letter-spacing:15px;
+}
+.box1-new:hover .overlay-new{
+    opacity:1;
+}
+.box2-new:hover .overlay-new{
+    opacity:1;
+}
+.box3-new:hover .overlay-new{
+    opacity:1;
+}
+.viduo1{
+    width: 100%;
+    height:750px;
+    background-color:rgba(201, 73, 111, 0.389);
+    
+}
+.video-new{
+    width:100%;
+    height:700px;
+    background-size: cover;
+    
+}
+.user{
+    width: 100%;
+    height:550px;
+    background-color:white;
+    margin-top:70px;
+}
+.user-1{
+    margin-bottom: 40px;
+   width: 90%;
+   height: 500PX;
+
+}
+.why{
+   font-size:50px ; 
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color:rgb(215, 45, 82) ;
+}
+em{
+  margin-left: 40px;
+ 
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+.des-why{
+    color:rgb(148, 27, 71)  ;
+    margin-bottom: 0px;
+    margin-top: 6px;
+    margin-left: 60px;
+    font-size: 20px;
+}
+.icon-text{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.icon-text i{
+    margin-left:80px;
+    font-size: 25px;
+}
+.sp1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:25px;
+}
+.footer{
+    width: 100%;
+    height:380x;
+    background-color:rgb(155, 63, 94) ;
+}
+.image-footer{
+    margin-left:40%;
+    margin-top: 20px;
+    
+}
+.icon-footer{
+    margin: auto;
+    margin-left:35%;
+    font-size:80px;
+    margin-top:0px;
+    
+}
+.t-footer{
+    margin-top: 5px;
+    margin-left: 25%;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:30px;
+}
+
+
